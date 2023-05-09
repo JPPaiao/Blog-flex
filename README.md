@@ -1,5 +1,5 @@
 # Blog-flex
-Site responsivo feito com flex-blox  
+Site responsivo para estudar flex box  
 
 Link do projeto
 https://codepen.io/jppaiao/pen/MWrppmW
