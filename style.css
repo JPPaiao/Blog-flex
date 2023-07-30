@@ -7,6 +7,7 @@
 :root{
     --ca-ro: #1325AB;
     --nav: #2863FF;
+    --fonts-primary: #2c2c2c; 
 }
 
 /* ------------------------------- */
@@ -14,7 +15,6 @@
 header{
     background-color: var(--nav);
     color: white;
-    font-weight: bold;
 }
 
 #color{
@@ -42,7 +42,7 @@ header{
     padding: 20px 0px;
     font-size: 22px;
     max-width: 1010px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .alinav{
@@ -54,23 +54,34 @@ header{
     padding: 7px;
 }
 
-.nav > ul{
+.nav > .nav-header {
     display: inline-block;
 }
 
-ul{
+.nav-header {
     margin-left: 5px;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
-ul > li{
+.nav-header > li {
     display: inline-block;
     padding-left: 5px;
+}
+
+.nav-header a:hover {
+    color: var(--ca-ro);
+    transition: all;
+    transition-duration: 0.3s;
+    border-bottom: var(--ca-ro) 4px solid;
 }
 
 a{
     text-decoration: none;
     color: white;
+    padding-bottom: 2px;
 }
 
 @media screen and (max-width: 630px) {
@@ -115,6 +126,7 @@ main{
     margin: 50px 0px;
     font-size: 45px;
     padding: 5px;
+    color: var(--fonts-primary);
 }
 
 .art{
@@ -122,18 +134,25 @@ main{
     padding: 50px 10px;
     font-weight: lighter;
     display: flex;
+    justify-content: space-between;
 }
 
-.art h1{
+.art h2{
     font-size: 2.5rem;
     margin: 20px 0;
+    color: var(--fonts-primary);
+}
+
+.art > .col {
+    max-width: 500px;
 }
 
 .art p{
-    text-align: left ;
+    text-align: left;
     margin: 15px 0;
     color: rgba(0, 0, 0, 0.616);
     text-rendering: 3em;
+    font-size: 1.1em;
 }
 
 .cores{
@@ -212,9 +231,6 @@ main{
     }
 }
 
-
-
-
 /* -------------------- */
 
 footer{
@@ -222,7 +238,7 @@ footer{
     padding: 50px;
     background-color: var(--nav);
     text-align: center;
-    color: rgb(0, 0, 134);
+    color: rgb(20, 20, 128);
     font-weight: normal;
     font-family: -webkit-pictograph;
 }
