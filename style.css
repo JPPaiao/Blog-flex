@@ -55,16 +55,12 @@ header{
     padding: 7px;
 }
 
-.nav > .nav-header {
-    display: inline-block;
-}
-
 .nav-header {
     margin-left: 5px;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav-header > li {
@@ -117,7 +113,7 @@ a{
 
 /* ------------------------- */
 
-main{
+.containers-main {
     max-width: 1000px;
     margin: auto;
 }
@@ -207,8 +203,12 @@ main{
 }
 
 .precos {
-    border-top: 2px solid var(--nav);
     padding-bottom: 60px;
+    background-color: #f8f8f8;
+}
+
+.containers-main {
+    border-top: 2px solid var(--nav);
 }
 
 .cards {
@@ -221,16 +221,16 @@ main{
 }
 
 .card-preco {
-    background-color: #fafafa;
+    background-color: #f7f7f7;
     height: auto;
     width: 200px;
-    padding: 6px 0;
+    padding: 16px 26px;
+    border: #fff solid 6px;
 }
 
 .precos-header {
     padding: 6px 0;
-    border-bottom: var(--borders) 4px solid;
-    border-top: var(--borders) 4px solid;
+    border-bottom: #fff 6px solid;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -258,7 +258,7 @@ main{
 .list-atributos > ul {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     font-style: italic;
 }
 
@@ -269,9 +269,72 @@ main{
     width: 100%;
     border: var(--borders) solid 4px;
     font-size: 1.4em;
-    padding: 4px;
+    padding: 18px 0;
     color: var(--fonts-primary);
     font-weight: bold;
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.btn-compra:hover {
+    background-color: #686868;
+    border: #fff solid 4px;
+    color: #fff;
+    transition: all .2s;
+}
+
+.containers-form {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.email {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 90px 0;
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fale-conosco > h2 {
+    color: #686868;
+    font-size: 2.5em;
+}
+
+.fale-conosco > p {
+    font-style: italic;
+    color: #686868;
+}
+
+.form-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-email > input {
+    border: none;
+    padding: 16px 10px;
+    font-size: 1.2em;
+    color: #fff
+}
+
+.form-email > input[type="text"] {
+    border: var(--nav) 4px solid;
+    width: 220px;
+}
+
+.form-email > input[type="submit"] {
+    border: var(--nav) 4px solid;
+    background-color: var(--nav);
+    padding: 16px 28px;
     cursor: pointer;
 }
 
@@ -309,13 +372,19 @@ li {
 
 /* -------------------- */
 
-footer{
-    max-width: 100%;
+footer {
     padding: 50px;
     background-color: var(--nav);
     text-align: center;
     color: rgb(20, 20, 128);
     font-weight: normal;
-    font-family: -webkit-pictograph;
+}
+footer a {
+    color: rgb(20, 20, 128);
+}
+
+footer a:hover {
+    color: #fff;
+    transition: all .2s;
 }
 
