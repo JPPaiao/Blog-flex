@@ -152,6 +152,14 @@ a{
     font-size: 1.1em;
 }
 
+.art > #img {
+    max-width: 500px;
+}
+
+#img > img {
+    width: 100%;
+}
+
 .cores{
     border-top: 2px solid var(--nav);
     padding: 0px 8px;
@@ -168,8 +176,12 @@ a{
 .alicor{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 18px;
+}
+
+.cards-img {
+    max-width: 260px;
 }
 
 .c1{
@@ -179,6 +191,7 @@ a{
 
 .c2{
     border-top: 10px solid #69478193;
+    max-width: 320px;
 }
 
 .c3{
@@ -193,13 +206,8 @@ a{
     color: rgba(0, 0, 0, 0.418);
 }
 
-.c2 > .imgs{
-    height: auto;
-    width: 275px;
-}
-
-.imgs{
-    width: 250px;
+.cards-img > .imgs{
+    width: 100%;
 }
 
 .precos {
@@ -214,7 +222,6 @@ a{
 .cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 18px;
     max-width: 960px;
     justify-content: space-evenly;
@@ -223,7 +230,7 @@ a{
 .card-preco {
     background-color: #f7f7f7;
     height: auto;
-    width: 200px;
+    width: 100%;
     padding: 16px 26px;
     border: #fff solid 6px;
 }
@@ -349,14 +356,29 @@ li {
 @media screen and (max-width: 830px) {
     .alicor{
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .c3 > .imgs{
-        width: auto;
+    .c3 {
+        max-width: 460px;
     }
 
     .cards {
-        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .card-preco {
+        max-width: 420px;
+    }
+
+    .precos-header {
+        font-size: 1.8em;
+    }
+
+    .list-atributos {
+        font-size: 1.6em;
+        padding: 22px 10px;
     }
 }
 
@@ -370,6 +392,16 @@ li {
 
     .forc .imgs{
         width: calc(100% - 50px);
+    }
+
+    .email {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .cards-img {
+        max-width: 460px;
     }
 }
 
