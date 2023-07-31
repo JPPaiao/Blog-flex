@@ -317,25 +317,29 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: var(--nav) 4px solid;
 }
 
 .form-email > input {
     border: none;
     padding: 16px 10px;
     font-size: 1.2em;
-    color: #fff
+    color: #fff;
 }
 
 .form-email > input[type="text"] {
-    border: var(--nav) 4px solid;
     width: 220px;
 }
 
 .form-email > input[type="submit"] {
-    border: var(--nav) 4px solid;
     background-color: var(--nav);
     padding: 16px 28px;
     cursor: pointer;
+}
+
+.form-email > input[type="submit"]:hover {
+    background-color: #003ee7;
+    transition: all .8s;
 }
 
 li {
