@@ -243,20 +243,25 @@ a{
     align-items: center;
     flex-direction: column;
     gap: 18px;
-    font-size: 1.4em;
+    font-size: 1.8em;
+    text-align: center;
 }
 
 .precos-header > h3 {
-    color: #686868;
+    color: #5c5c5c;
+    border-bottom: #fff 6px solid;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 .precos-header > p {
-    color: #2e2e2e;
+    color: #1d1d1d;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .list-atributos {
-    padding: 10px 8px;
+    padding: 16px 8px;
     font-size: 1.1em;
     font-weight: lighter;
     color: #686868;
@@ -265,7 +270,7 @@ a{
 .list-atributos > ul {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     font-style: italic;
 }
 
